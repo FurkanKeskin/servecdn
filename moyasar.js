@@ -668,7 +668,7 @@ r = this, n = function() {
                                 return !!this.credit_card_save_card
                             }, r.prototype.Ar = function() {
                                 var r, n = /^[\w\s\d\-~]{1,64}$/.test(null !== (r = this.statement_descriptor) && void 0 !== r ? r : "");
-                                console.log('FURKAN IS HERE', r, n)
+                                console.log('FURKAN IS HERE', r, n, this.statement_descriptor)
                                 console.log(typeof this.statement_descriptor);
                                 if (this.statement_descriptor && !n) throw new Error("Invalid format for the statement descriptor");
                                 return this.statement_descriptor
