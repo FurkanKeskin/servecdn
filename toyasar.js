@@ -667,12 +667,9 @@ r = this, n = function() {
 							}, r.prototype.Ir = function() {
 								return !!this.credit_card_save_card
 							}, r.prototype.Ar = function() {
+								console.log('lan: ', this.statement_descriptor);
 								var r, n = /^[\w\s\d\-~]{1,64}$/.test(null !== (r = this.statement_descriptor) && void 0 !== r ? r : "");
                                 console.log(r, n);
-                                const anan = r.forEach((e) => {
-                                    console.log(e);
-                                });
-                                console.log(anan); 
 								if (this.statement_descriptor && !n) throw new Error("Invalid format for the statement descriptor");
 								return this.statement_descriptor
 							}, r
