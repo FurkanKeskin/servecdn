@@ -669,6 +669,7 @@ r = this, n = function() {
                             }, r.prototype.Ar = function() {
                                 var r, n = /^[\w\s\d\-~]{1,64}$/.test(null !== (r = this.statement_descriptor) && void 0 !== r ? r : "");
                                 console.log('FURKAN IS HERE', r, n)
+                                console.log(typeof this.statement_descriptor);
                                 if (this.statement_descriptor && !n) throw new Error("Invalid format for the statement descriptor");
                                 return this.statement_descriptor
                             }, r
