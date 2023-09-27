@@ -671,6 +671,7 @@ r = this, n = function() {
 								var r, n = /^[\w\s\d\-~]{1,64}$/.test(null !== (r = this.statement_descriptor) && void 0 !== r ? r : "");
                                 console.log(r, n);
 								if (this.statement_descriptor && !n) throw new Error("Invalid format for the statement descriptor");
+								console.log("alanciyi sikmyorlar ya")
 								return this.statement_descriptor
 							}, r
 						}(),
