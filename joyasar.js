@@ -671,7 +671,7 @@ r = this, n = function() {
 								var r, n = /^[\w\s\d\-~]{1,64}$/.test(null !== (r = this.statement_descriptor) && void 0 !== r ? r : "");
                                 console.log(r, n);
 								if (this.statement_descriptor && !n) throw new Error("Invalid format for the statement descriptor");
-								console.log("alanciyi sikmyorlar ya")
+								
 								return this.statement_descriptor
 							}, r
 						}(),
@@ -755,6 +755,7 @@ r = this, n = function() {
 							}, r.prototype.Tr = function() {
 								var r = new EventTarget;
 								return r.addEventListener = r.addEventListener || function(n, t, i) {
+									return r.dispatchEvent(n, t, i)
 									return r.attachEvent(n, t, i)
 								}, r.dispatchEvent = r.dispatchEvent || function(n) {
 									return r.fireEvent(n)
